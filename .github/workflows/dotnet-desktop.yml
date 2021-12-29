@@ -91,11 +91,11 @@ jobs:
     - name: list files
       run: |
         dir \
-        dir \bin\Release\
+        dir \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
         name: MSIX Package
-        path: \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin\Release\
+        path: \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin\Release
