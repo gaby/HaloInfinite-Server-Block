@@ -74,9 +74,6 @@
     <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>13EA51B5C7B7DAB52834C1338AE57BB4E499D153</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
     <ManifestKeyFile>HaloInfiniteServerBlock_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
