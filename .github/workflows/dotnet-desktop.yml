@@ -90,8 +90,14 @@ jobs:
         
     - name: list files
       run: |
-        dir \
-        dir \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin
+        dir \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin\Release\
+
+    - name: Create release structure
+      run: |
+        mkdir \release
+        move \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin\Release\HaloInfiniteServerBlock.exe \release
+        move \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\servers.json
+        dir \release
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
@@ -99,5 +105,4 @@ jobs:
       with:
         name: HaloInfinity-ServerBlocker
         path: |
-            \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\src\bin\Release
-            \a\HaloInfinite-Server-Block\HaloInfinite-Server-Block\servers.json
+            \release
