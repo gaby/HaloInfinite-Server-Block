@@ -87,6 +87,11 @@ jobs:
         Appx_Bundle: Always
         Appx_Bundle_Platforms: x86|x64
         Appx_Package_Build_Mode: StoreUpload
+        
+    - name: list files
+      run: |
+        dir \
+        dir \bin\Release\
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
